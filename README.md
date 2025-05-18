@@ -31,23 +31,23 @@
 
 ## Project Structure
 
-discord-bot/
+```
+chordbot/
+│
+├── bot.py                  # Entry point
+├── config.json             # Contains the bot token (excluded from git)
+├── requirements.txt        # Python dependencies
+│
+├── song-lib/               # All mp3 songs stored here
 │
 ├── cogs/
-│ ├── music.py # Music playback & queue management
-│ ├── voice.py # Voice channel join/leave and speaking commands
-│ ├── misc.py # Utility commands (hello, help, ping, etc)
-│ └── utility.py # Other utility commands (time, date, copy, refresh)
+│   ├── music.py            # Music-related commands
+│   ├── misc.py             # Fun and utility commands (ping, hello, etc.)
+│   ├── system.py           # Commands like close_bot, refresh
+│   └── __init__.py
 │
-├── song-lib/ # Folder for your MP3 files (song library)
-│ ├── song1.mp3
-│ ├── song2.mp3
-│ └── ...
-│
-├── bot.py # Main bot launcher & command tree sync
-├── config.json # Configuration file for storing sensitive data
-├── requirements.txt # Python dependencies list
-└── README.md # This documentation
+└── README.md               # You're reading it
+```
 
 ---
 
