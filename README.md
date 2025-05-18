@@ -91,13 +91,11 @@ chordbot/
 
 Create a `config.json` file in the root directory with your Discord bot token:
 
-    ```json
     {
     "token": "YOUR_BOT_TOKEN_HERE"
     }
 Never commit this file to public repositories. Use .gitignore to exclude it:
 
-    ```json
     config.json
 
 ---
@@ -108,12 +106,10 @@ Make sure you have Python 3.10+ installed.
 
 Install required packages:
 
-    ```bash
     pip install -r requirements.txt
 
 Then start the bot with:
 
-    ```bash
     python bot.py
 
 \* On startup, the bot will automatically sync all slash commands with Discord. This may take a few seconds.
