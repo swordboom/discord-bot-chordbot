@@ -66,7 +66,7 @@ chordbot/
 
    ```bash
    git clone https://github.com/swordboom/discord-bot-chordbot.git
-   cd discord-modular-slash-bot
+   cd discord-bot-chordbot
    ```
 
 2. **Create and activate a virtual environment (optional but recommended)**
