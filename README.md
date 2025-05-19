@@ -43,7 +43,8 @@ chordbot/
 ├── cogs/
 │   ├── music.py            # Music-related commands
 │   ├── misc.py             # Fun and utility commands (ping, hello, etc.)
-│   ├── system.py           # Commands like close_bot, refresh
+│   ├── voice.py            # Voice commands
+|   ├── utility.py          # Other commands
 │   └── __init__.py
 │
 └── README.md               # You're reading it
