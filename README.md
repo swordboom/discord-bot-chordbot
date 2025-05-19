@@ -65,7 +65,7 @@ chordbot/
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/swordboom/discord-modular-slash-bot.git
+   git clone https://github.com/swordboom/discord-bot-chordbot.git
    cd discord-modular-slash-bot
    ```
 
