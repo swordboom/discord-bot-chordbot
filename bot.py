@@ -1,5 +1,13 @@
 import discord
+import json
 from discord.ext import commands
+
+# Load configuration from config.json
+with open("config.json") as f:
+    config = json.load(f)
+
+BOT_TOKEN = config.get("token")
+APPLICATION_ID = config.get("application_id")
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -9,7 +17,7 @@ class MyBot(commands.Bot):
         super().__init__(
             command_prefix="!",
             intents=intents,
-            application_id=YOUR_APPLICATION_ID  # Replace with your app ID (int)
+            application_id=APPLICATION_ID  # Loaded from config.json
         )
         self.tree = discord.app_commands.CommandTree(self)
 
@@ -24,4 +32,4 @@ bot = MyBot()
 async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
 
-bot.run("YOUR_BOT_TOKEN")
+bot.run(BOT_TOKEN)
